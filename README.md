@@ -1,4 +1,4 @@
-# Revenue Cycle Analyst Competency Exercise
+# Revenue Cycle Analysis
 
 ### Charge Batch Reconciliation & Workflow Turnaround Analysis
 
