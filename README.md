@@ -111,3 +111,9 @@ This type of exception-based reporting can help revenue cycle teams focus their 
 ## Project Takeaway
 
 This exercise demonstrates the ability to take operational healthcare data, reconcile information across multiple sources, identify exceptions, calculate meaningful turnaround metrics, and translate the results into management-ready reporting and business communication.
+
+## Management Report
+
+The Tableau management report visualizes charge-volume variances and processing timelines across locations. It provides visibility into discrepancies between operational data sources and business-day turnaround throughout the revenue cycle workflow.
+
+![Revenue Cycle Management Report](revenue_cycle_management_report.png)
