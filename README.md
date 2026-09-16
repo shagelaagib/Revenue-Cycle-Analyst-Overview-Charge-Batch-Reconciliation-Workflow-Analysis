@@ -1,4 +1,4 @@
-# Revenue Cycle Analyst Competency Exercise
+# Revenue Cycle Performance Analysis
 
 ## Overview
 
