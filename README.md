@@ -1,119 +1,106 @@
-# Revenue Cycle Analysis
-
-### Charge Batch Reconciliation & Workflow Turnaround Analysis
+# Revenue Cycle Analyst Competency Exercise
 
 ## Overview
 
-This project demonstrates revenue cycle analysis skills through the reconciliation of charge batch data across multiple operational sources and the analysis of workflow turnaround times.
+This project analyzes charge batch data to identify volume discrepancies and evaluate processing turnaround across a healthcare revenue cycle workflow.
 
-The exercise uses a subset of a charge batch tracker and iStats volume data to identify discrepancies, measure processing timelines, and develop management reporting to support operational oversight.
+The analysis was designed as a management reporting exercise, combining Excel-based data reconciliation with Tableau visualizations to highlight exceptions, monitor workflow timelines, and support operational decision-making.
 
 ## Business Objective
 
-The objective was to:
+The objective was to create management reporting that provides visibility into two key areas:
 
-* Reconcile charge volumes across the coversheet, charge sheet, and iStats
-* Identify locations with volume variances
-* Measure how quickly locations submit data to PPM
-* Measure Onshore-to-Offshore handoff times
-* Measure Offshore processing turnaround times
-* Communicate identified discrepancies to clinic staff
+* **Data accuracy:** Identify locations with variances between the coversheet, charge sheet, and iStats volume data.
+* **Operational efficiency:** Measure business-day turnaround at different stages of the charge-processing workflow.
 
-## Analysis Performed
+## Analysis & Reporting
 
-### 1. iStats Volume Reconciliation
+### Charge Volume Variance Analysis
 
-iStats volume data was pulled from the Stats Query tab into the Data tab while maintaining the underlying Excel formulas/functions used for the reconciliation.
+I reconciled charge volume information across the coversheet, charge sheet, and iStats data.
 
-The resulting dataset allowed charge volumes to be compared across the three source systems:
+The analysis identifies locations where reported volumes do not align across the three sources, allowing management to quickly identify exceptions that require further investigation.
 
-* Coversheet
-* Charge sheet
-* iStats
+This approach supports data accuracy by focusing attention on locations with discrepancies rather than requiring manual review of every record.
 
-### 2. Charge Volume Variance Analysis
+### Processing Timeline Analysis
 
-A management report was developed to identify locations with discrepancies between the coversheet, charge sheet, and iStats.
+I calculated business-day turnaround across multiple stages of the workflow:
 
-The analysis focused on identifying locations requiring additional investigation rather than treating all records as equivalent.
+**Location → PPM**
 
-### 3. Location-to-PPM Turnaround
+Measured how many business days each location took to provide the required data to PPM.
 
-Business-day turnaround was calculated to measure how long each location took to provide required data to PPM.
+**Onshore → Offshore**
 
-This analysis provides visibility into location-level submission timeliness and helps identify potential workflow bottlenecks.
+Measured the business-day turnaround between Onshore sending the data to Offshore.
 
-### 4. Onshore-to-Offshore Turnaround
+**Offshore Processing**
 
-Business-day turnaround was calculated between the date data was received/processed by Onshore and the date it was sent to Offshore.
+Measured how many business days Offshore took to process the data after receiving it from Onshore.
 
-This provides management with visibility into the handoff between the two operational teams.
+Together, these metrics provide visibility into where time is being spent throughout the workflow and help identify potential processing bottlenecks.
 
-### 5. Offshore Processing Turnaround
+## Management Report
 
-Business-day turnaround was calculated to measure how long Offshore took to process data after receiving it from Onshore.
+The final Tableau report combines the variance analysis and processing-time metrics into a management-focused visual report.
 
-This provides an additional view of the overall charge-processing workflow and helps isolate where delays may occur.
+![Revenue Cycle Management Report](screenshots/revenue_cycle_management_report.png)
 
-### 6. Variance Communication
-
-A professional follow-up email was drafted for clinic staff requesting investigation of discrepancies between the coversheet and charge sheets.
-
-The communication was designed to clearly identify the issue, request review, and support timely resolution.
+The report allows stakeholders to review data discrepancies and workflow turnaround by location in a consolidated view.
 
 ## Tools & Skills
 
 **Excel**
 
-* XLOOKUP / lookup functions
-* Formula-based reconciliation
-* Data validation
+* Data reconciliation
+* Formula-based analysis
 * Business-day calculations
-* Conditional analysis
-* Management reporting
-* Data organization
+* Data validation
+* Operational reporting
+
+**Tableau**
+
+* Data visualization
+* Management dashboards
+* Exception reporting
+* Operational performance visualization
 
 **Revenue Cycle Analytics**
 
 * Charge reconciliation
-* Variance identification
-* Operational reporting
+* Variance analysis
 * Turnaround-time analysis
 * Workflow analysis
-* Exception management
-* Cross-functional communication
+* Management reporting
+* Operational problem identification
 
-## Key Deliverables
+## Deliverables
 
-| Deliverable                | Purpose                                      |
-| -------------------------- | -------------------------------------------- |
-| Charge Batch Data Analysis | Reconciles operational data sources          |
-| Variance Report            | Identifies locations requiring investigation |
-| Location Turnaround Report | Measures location-to-PPM submission time     |
-| Onshore-to-Offshore Report | Measures operational handoff time            |
-| Offshore Processing Report | Measures downstream processing time          |
-| Variance Follow-Up Email   | Communicates discrepancies to clinic staff   |
+| Deliverable                      | Purpose                                                             |
+| -------------------------------- | ------------------------------------------------------------------- |
+| Charge Batch Analysis            | Reconcile operational volume data                                   |
+| Variance Analysis                | Identify discrepancies between coversheet, charge sheet, and iStats |
+| Location-to-PPM Analysis         | Measure business-day submission turnaround                          |
+| Onshore-to-Offshore Analysis     | Measure operational handoff turnaround                              |
+| Offshore Processing Analysis     | Measure downstream processing time                                  |
+| Tableau Management Report        | Visualize variances and processing timelines                        |
+| Variance Follow-Up Communication | Communicate discrepancies requiring clinic review                   |
 
-## Business Impact
+## Business Value
 
-The analysis provides management with a structured view of both data accuracy and operational timeliness.
+The analysis converts operational charge data into management-ready information that can be used to identify exceptions and monitor workflow performance.
 
-Rather than reviewing charge batches individually, management can use the reporting to quickly identify:
+By combining reconciliation with turnaround-time analysis, the report provides visibility into both **data quality** and **process efficiency** across the revenue cycle workflow.
 
-* Locations with data discrepancies
-* Potential reconciliation issues
-* Locations with slower submission times
-* Delays in the Onshore-to-Offshore workflow
-* Delays occurring during Offshore processing
+## Key Takeaways
 
-This type of exception-based reporting can help revenue cycle teams focus their attention on records and processes requiring intervention.
+This project demonstrates my ability to:
 
-## Project Takeaway
-
-This exercise demonstrates the ability to take operational healthcare data, reconcile information across multiple sources, identify exceptions, calculate meaningful turnaround metrics, and translate the results into management-ready reporting and business communication.
-
-## Management Report
-
-The Tableau management report visualizes charge-volume variances and processing timelines across locations. It provides visibility into discrepancies between operational data sources and business-day turnaround throughout the revenue cycle workflow.
-
-![Revenue Cycle Management Report](revenue_cycle_management_report.png)
+* Reconcile data across multiple operational sources
+* Identify and investigate data variances
+* Calculate business-day turnaround metrics
+* Analyze workflow performance
+* Build management-focused visualizations in Tableau
+* Translate operational data into actionable reporting
+* Communicate data discrepancies to business stakeholders
